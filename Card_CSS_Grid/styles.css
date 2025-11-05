@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#373737;
+    color: #333;
+}
+
+.projects-section {
+    margin: 40px 0;
+}
+
+.projects-section h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: 800;
+    color:#fff
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.projects-card {
+    border: 3px solid #ddd;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s;
+    background-color: #454545; 
+}
+
+.projects-card img {
+    width: 15.625rem;
+    height: 15.625rem;
+    border-radius: 0.9375rem;
+    margin-bottom: 0.9375rem;
+}
+
+.projects-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.projects-card p {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.projects-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.nike_btn,
+.adidas_btn,
+.puma_btn {
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #007bff;
+    color: white;
+}
+
+.nike_btn:hover,
+.adidas_btn:hover,
+.puma_btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
